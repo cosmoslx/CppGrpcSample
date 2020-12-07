@@ -1,0 +1,8 @@
+{
+  "name": "cppgrpcsasmple",
+  "version-string": "0.1.0-dev",
+  "description": "grpc c++ sample",
+  "dependencies": [
+    "grpc"
+  ]
+}
