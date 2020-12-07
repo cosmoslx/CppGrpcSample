@@ -16,7 +16,7 @@
 
         > PS> cd build
 
-        > PS> cmake ..
+        > PS> cmake ..  -T host=x86 -A win32 -DCMAKE_TOOLCHAIN_FILE=[path/to/vcpkg]/scripts/buildsystems/vcpkg.cmake
        
     * Or start the `Powershell Core` and use `vcpkg` to manualy install dependencies:
 
