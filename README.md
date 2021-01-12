@@ -22,5 +22,5 @@
 
         > PS> cd ./grpcsample
 
-        > PS> [path/to/vcpkg]/vcpkg.exe install --feature-flagsmanifests
+        > PS> [path/to/vcpkg]/vcpkg.exe install --feature-flags=manifests
     

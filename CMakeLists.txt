@@ -47,4 +47,11 @@ target_include_directories(client PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")
 target_link_libraries(client PRIVATE
   gRPC::grpc++ gRPC::gpr gRPC::grpc gRPC::grpc++_alts
   protobuf::libprotoc protobuf::libprotobuf protobuf::libprotobuf-lite
-) 
+)
+
+add_executable(inproc src/greeter_inproc.cc ${hw_proto_srcs} ${hw_grpc_srcs})
+target_include_directories(inproc PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")
+target_link_libraries(inproc PRIVATE
+  gRPC::grpc++ gRPC::gpr gRPC::grpc gRPC::grpc++_alts gRPC::grpc++_reflection
+  protobuf::libprotoc protobuf::libprotobuf protobuf::libprotobuf-lite
+)
